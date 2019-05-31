@@ -1,0 +1,37 @@
+1 .pergunta
+Problema 10 milhões chamada api terceiro.
+Gargalos
+Indisponibilidade.
+Volume de informação do lado recebe dados para processar informação.
+Fila de mensagens (rabbitmq ou kafka)para que posso processar as mensagens recebidas de acordo com a disponibilidade de processamento e recursos da aplicação.
+Redundância aplicação para ser cair ou falsa tem mais de uma instância.
+
+2 .
+Updates Telefone api http.
+Camada serviço
+Recebe payload.
+Camada transforma payload em objeto possível ser manipulado.
+Validações poderia ficar responsável camada ou classe validador
+Classe response que teria responsabilidade montar resposta para ser enviada de voltas pela api.
+
+
+3)
+Para garantir a consistência dos dados o payload teria que te algum dado que identificasse o telefone como único banco. Para ser consultado pela camada de persistência é depois atualizado.
+
+Poderia ser divididos em 3 camadas
+Serviço
+Bussiness
+Pertinência
+
+ 
+4)Segurança
+
+Poderia trafegar dados dentro vpn
+Uso protocolo https ,tls e criptografada pacotes dados tracejado pela rede
+
+5)De forma sequêncial fila de mensagens.  Para forma aleatório coleção uso hash seria mais apropriado.
+
+
+
+
+
